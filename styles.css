@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffcc33, #ff66cc, #3366ff, #33cc99);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffcc33;
+}
+
+#display {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+#start {
+    background-color: #4CAF50;
+}
+
+#start:hover {
+    background-color: #45a049;
+}
+
+#stop {
+    background-color: #f44336;
+}
+
+#stop:hover {
+    background-color: #e53935;
+}
+
+#reset {
+    background-color: #008CBA;
+}
+
+#reset:hover {
+    background-color: #007bb5;
+}
+
+#lap {
+    background-color: #FFA500;
+}
+
+#lap:hover {
+    background-color: #ff8c00;
+}
+
+#laps {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#laps li {
+    font-size: 1.2em;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
